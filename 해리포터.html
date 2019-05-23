@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>jQuery Mobile</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="mportpolio.css"/>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        li { list-style:none; }
+        .picture { list-style:none; padding:0; margin:0; }
+        .picture li { float:left; width:50%;}
+        .picture li a {display:block; margin:5px; border: 1px }
+        .picture li img { display:block; width:50%;  height:auto;}
+        .picture li img:hover { display:block; width:100%;  height:auto;}
+    </style>
+</head>
+
+<body>
+<div data-theme="b">
+    <div data-role="page" id="home">
+        <div data-role="header" data-position="fixed" style="background-color: lightblue">
+            <button data-icon="search"><a href="mp/mresume.html" target="_blank">이력서</a></button>
+            <h1>Harry Potter</h1>
+            <button data-icon="search"><a href="http://naver.com">인터넷검색</a></button>
+        </div>
+
+        <div data-role="content" style="text-align:center">
+            <img src="HP.jpg" >
+            <ul data-role="listview" data-inset="true" data-divider-theme="e">
+                <li data-role="listdivider">Harry Potter 소개</li>
+                <li type="button" data-icon="info"><a href="#info">작가 소개</a></li>
+                <li type="button" data-icon="check"><a href="#series">시리즈 순서</a></li>
+                <li type="button" data-icon="camera"><a href="#gallery">Harry Potter 갤러리</a></li>
+                <li type="button" data-icon="video"><a href="#video">영화 홍보영상</a></li>
+                <li type="button" data-icon="home"><a href="#official_site">해리포터 관련사이트</a></li>
+            </ul>
+        </div>
+
+        <div data-role="footer" data-position="fixed" style="background-color: lightblue">
+            <h1>201858070 최민지</h1>
+        </div>
+    </div>
+
+    <div data-role="page" id="series" data-position="fixed">
+        <div data-role="header" style="background-color: lightblue">
+            <a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+            <h1>시리즈 순서</h1>
+        </div>
+        <div data-role="content">
+            <div data-role="collapsible">
+                <h3>해리포터와 마법사의 돌(2001)</h3>
+                <h4>Harry Potter And The Sorcerer's Stone</h4>
+                <p>#줄거리</p>
+                <p>해리 포터(다니엘 래드클리프 분)는 위압적인 버논 숙부(리챠드 그리피스 분)와 냉담한 이모 페투니아 (피오나 쇼 분), 욕심 많고 버릇없는 사촌 더즐리(해리 멜링 분) 밑에서 갖은 구박을 견디며 계단 밑 벽장에서 생활한다. 이모네 식구들 역시 해리와의 동거가 불편하기는 마찬가지. 이모 페투니아에겐 해리가 이상한(?) 언니 부부에 관한 기억을 떠올리게 만드는 달갑지 않은 존재다. 11살 생일이 며칠 앞으로 다가왔지만 한번도 생일파티를 치르거나 제대로 된 생일선물을 받아 본 적이 없는 해리로서는 특별히 신날 것도 기대 할 것도 없다. 11살 생일을 며칠 앞둔 어느 날 해리에게 초록색 잉크로 쓰여진 한 통의 편지가 배달된다. 그 편지의 내용은 다름 아닌 해리의 11살 생일을 맞이하여 전설적인“호그와트 마법학교”에서 보낸 입학초대장이었다. 그리고 해리의 생일을 축하하러 온 거인 해그리드는 해리가 모르고 있었던 해리의 진정한 정체를 알려주는데. 그것은 바로 해리가 굉장한 능력을 지닌 마법사라는 것!</p>
+            </div>
+            <div data-role="collapsible">
+                <h3>해리포터와 비밀의 방(2002)</h3>
+                <h4>Harry Potter And The Chamber Of Secrets</h4>
+                <p>#줄거리</p>
+                <p>개학을 앞두고 학교에 가는 날, 론과 해리는 뭔가의 방해로 9와 3/4 승강장에 못 들어가는 바람에 개학식에 지각할 위기에 처한다. 결국 하늘을 나는 자동차 포드 앵글리아를 타고 천신만고끝에 학교에 도착했으나 공교롭게도 차가 학교 선생님들이 소중히 여기는 '커다란 버드나무' 위에 불시착하는 바람에 화가 난 스네이프 교수로부터 퇴학 경고를 받게 된다. 한편 1학년 때 해리가 보여준 영웅적인 활약상은 학교 전체에 소문이 나고, 그 덕에 해리는 원치 않는 관심의 초점이 된다. 론의 여동생 지니, 사진작가 지망생 콜린 크리비 등의 신입생과 어둠의 마법 방어술을 가르치는 신임 교수 질데로이 록허트가 새롭게 해리포터의 팬이 된다.</p>
+            </div>
+            <div data-role="collapsible">
+                <h3>해리포터와 아즈카반의 죄수(2004)</h3>
+                <h4>Harry Potter And The Prisoner Of Azkaban</h4>
+                <p>#줄거리</p>
+                <p>13세가 된 해리 포터(다니엘 래드클리프)는 또 한번의 여름 방학을 이모 가족인 더즐리 일가와 우울하게 보내야 했다. 물론 마법을 쓰는 건 일체 금지. 하지만, 버논 이모부의 누이인 마지 아줌마(팸 페리스)가 더즐리 가를 방문하면서 상황은 변한다. 위압적인 마지는 해리에겐 늘 공포의 대상. 마지 아줌마 때문에 스트레스를 받던 해리는 급기야 '실수로' 그녀를 거대한 괴물 풍선으로 만들어 하늘 높이 띄워 보내버리고 만다.</p>
+            </div>
+            <div data-role="collapsible">
+                <h3>해리포터와 불의 잔(2005)</h3>
+                <h4>Harry Potter And The Goblet Of Fire</h4>
+                <p>#줄거리</p>
+                <p>호그와트 교정에서 누군가 살해되면서 상황은 급변한다. 볼드모트의 악몽으로 두려움에 휩싸인 해리는 덤블도어를 찾아가지만 그 역시도 뚜렷한 해답을 제시하지 못한다. 경기가 진행되고, 해리와 다른 출전자들이 마지막 과제를 풀기 위해 안간힘을 쓰고 있을 때 무언가가 계속 이들을 주시한다. 승리가 목전에 다가온 그 순간, 이제까지의 모든 진실이 밝혀지고 해리포터에게는 진정한 악과의 피할 수 없는 대결이 기다리고 있는데....</p>
+            </div>
+            <div data-role="collapsible">
+                <h3>해리포터와 불사조 기사단(2007)</h3>
+                <h4>Harry Potter And The Order Of The Phoenix</h4>
+                <p>#줄거리</p>
+                <p>길고도 지루한 여름 날 호그와트 마법학교 다섯 번째 해를 기다리고 있는 해리포터(다니엘 래드클리프). 이모부 더즐리 식구들과 참고 사는 것도 지겨운데다 친구 론(루퍼트 그린트)과 헤르미온느(엠마 왓슨)에게서는 편지 한 통 오지 않는다. 그러던 중 예상치 못했던 편지 한 장이 도착한다. 그것은 해리가 학교 밖인 리틀 위닝에서 얄미운 사촌 두들리, 즉 머글 앞에서 디멘터들의 공격을 막는 마법을 사용했기 때문에 호그와트 마법학교에서 퇴학 당하게 되었다는 소식이었다. 앞이 캄캄한 해리. 갑자기 어둠의 마법사 오러들이 나타나 해리를 불사조 기사단의 비밀 장소로 데리고 간다.</p>
+            </div>
+            <div data-role="collapsible">
+                <h3>해리포터와 혼혈 왕자(2009)</h3>
+                <h4>Harry Potter And The Half-Blood Prince</h4>
+                <p>#줄거리</p>
+                <p>어둠의 세력이 더욱 강력해져 머글 세계와 호그와트까지 위협해온다. 위험한 기운을 감지한 덤블도어 교수는 다가올 전투에 대비하기 위해 해리 포터와 함께 대장정의 길을 나선다. 볼드모트를 물리칠 수 있는 유일한 단서이자 그의 영혼을 나누어 놓은 7개의 호크룩스를 파괴하는 미션을 수행해야만 하는 것! 또한 덤블도어 교수는 호크룩스를 찾는 기억여행에 결정적 도움을 줄 슬러그혼 교수를 호그와트로 초청한다.</p>
+            </div>
+            <div data-role="collapsible">
+                <h3>해리포터와 죽음의 성물-1부(2010)</h3>
+                <h4>Harry Potter And The Deathly Hallows: Part 1</h4>
+                <p>#줄거리</p>
+                <p>덤블도어 교장의 죽음 이후, 마법부는 죽음을 먹는 자들에게 점령당하고 호그와트는 위기에 빠진다. 이에 해리와 론, 헤르미온느는 볼드모트를 물리칠 수 있는 유일한 단서이자 그의 영혼이 담긴 ‘성물’ 호크룩스를 찾기 위한 위험한 여정에 나선다. 그러나 영혼이 연결되어 있는 볼드모트와 해리. 볼드모트를 파괴하면 해리의 목숨 또한 위태로워질지 모른다! 죽느냐 죽이느냐, 이제 그 마지막 대결은 극한을 향해 치닫는데…</p>
+            </div>
+            <div data-role="collapsible">
+                <h3>해리포터와 죽음의 성물-2부(2011)</h3>
+                <h4>Harry Potter And The Deathly Hallows: Part 2</h4>
+                <p>#줄거리</p>
+                <p> 덤블도어 교장이 남긴 ‘죽음의 성물’의 단서를 쫓던 해리 포터는 볼드모트가 그토록 찾아 다닌 절대적인 힘을 가진 지팡이의 비밀을 통해 드디어 마지막 퍼즐을 완성한다. 볼드모트의 영혼이 담긴 다섯 번째 ‘호크룩스’를 찾기 위해 마법학교 호그와트로 돌아온 해리와 친구들은 그들을 잡으려는 보안마법에 걸려 위기를 맞지만 덤블도어의 동생인 에버포스의 도움으로 벗어난다. 그리고 그에게서 덤블도어와 어둠의 마법사 그린델왈드에 관한 놀라운 과거에 대해 알게 된다. 한편, 볼드모트는 해리에 의해 호크룩스들이 파괴되었음을 느끼고 호그와트로 향한다. 해리를 주축으로 한 불사조 기사단과 죽음을 먹는 자들 간의 마법전투가 벌어지고 여기에 거대거미 아크로맨투라와 거인족 등 마법 생물들이 볼드모트 편으로 가세하면서 호그와트는 거대한 전쟁터로 변한다. 전쟁의 틈에서 해리는 덤블도어를 죽인 스네이프의 엄청난 비밀과 볼드모트를 죽일 마지막 호크룩스에 대한 단서를 알게 되는데...</p>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed" style="background-color: lightblue">
+            <h1>201858070 최민지</h1>
+        </div>
+
+    </div>
+
+    <div data-role="page" id="video">
+        <div data-role="header" data-position="fixed" style="background-color: lightblue">
+            <a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+            <h1>영화 홍보영상</h1>
+        </div>
+        <div data-role="content" >
+            <div class="ui-bar ui-bar-e">해리포터와 죽음의 성물:1-예고편</div><br/>
+            <li><iframe width="100%" height="240" src="https://youtu.be/qTsaveYeR8I"></iframe></li><br/>
+        </div>
+        <div data-role="footer" style="background-color: lightblue">
+            <h1>201858070 최민지</h1>
+        </div>
+    </div>
+
+    <div data-role="page" id="wizard3-1">
+        <div data-role="header">
+            <h1>독도 노래1</h1>
+        </div>
+        <div data-role="content">
+            <div class="ui-bar ui-bar-e">홀로 아리랑</div><br/>
+            <audio controls width="100%" preload="metadata">
+                <source src="arirangalone.mp3" type="audio/mp3">
+            </audio>
+            <img src="3-1.jpg" alt="" width="100%">
+        </div>
+        <div data-role="footer">
+            <a href="#home"  data-direction="reverse">이전</a>
+            <a href="#wizard3-2" data-rel="dialog" data-transition="slide">다음</a>
+        </div>
+    </div>
+
+    <div data-role="page" id="info">
+        <div data-role="header" data-position="fixed"  style="background-color: lightblue">
+            <a href="#home">처음</a>
+            <h1>작가 소개</h1>
+        </div>
+        <div data-role="content">
+            <img width="100px" src="작가.jpeg" alt="" width="100px">
+            <p>조앤 롤링(Joan K. Rowling, 1965~)의 삶과 해리 포터의 성공은 그 자체로 하나의 동화이다. 조앤의 특출한 상상력은 독서를 즐겼던 양친이 틈만 나면 딸에게 책을 읽어주곤 했던 조앤의 어린 시절부터 형성되었다. 이야기의 세계에 빠져 상상력을 지펴가던 그녀는 여섯 살 때 '토끼' 이야기를 지어내 두 살 아래의 여동생에게 들려주었다. 그것은 주인공 토끼가 홍역에 걸려 집에 누워 있는데, 동물 친구들이 병문안을 온다는 내용의 이야기였다. 조앤은 동생에게 들려준 그 이야기를 곧 연필로 적어나가기 시작했다. 이것이 그녀의 생애 첫 작품이었다. 그리고 열 살 무렵엔 두 번째 작품인 「일곱 개의 저주받은 다이아몬드」라는 단편소설을 쓰기도 했다.</p>
+        </div>
+        <fieldset data-role="controlgroup" data-type="horizontal" >
+            <legend>정보가 도움이 되었습니까?</legend>
+            <input type="radio" name="semester" id="Y" value="1" checked="checked"/>
+            <label for="Y">예</label>
+            <input type="radio" name="semester" id="N" value="2"/>
+            <label for="N">아니오</label>
+        </fieldset>
+
+        <div data-role="footer" data-position="fixed" style="background-color: lightblue">
+            <h1>201858070 최민지</h1>
+        </div>
+    </div>
+
+    <div data-role="page" id="gallery">
+        <div data-role="header" data-position="fixed"  style="background-color: lightblue">
+            <a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+            <h1>Harry Potter 갤러리</h1>
+        </div>
+        <div data-role="content">
+            <ul class="picture">
+                <li><a href="hp_1.jpeg" rel="external"><img src="hp_1.jpeg"/></a></li>
+                <li><a href="hp_2.jpeg" rel="external"><img src="hp_2.jpeg" /></a></li>
+                <li><a href="hp_3.jpeg" rel="external"><img src="hp_3.jpeg" /></a></li>
+                <li><a href="hp_4.jpeg" rel="external"><img src="hp_4.jpeg" /></a></li>
+            </ul>
+        </div>
+        <div>
+            <fieldset data-role="controlgroup">
+                <legend>가장 마음에 드는 사진은?</legend>
+                <input type="radio" name="syear" id="syear1" value="1" />
+                <label for="syear1">1번</label>
+                <input type="radio" name="syear" id="syear2" value="2"/>
+                <label for="syear2">2번</label>
+                <input type="radio" name="syear" id="syear3" value="3" checked="checked"/>
+                <label for="syear3">3번</label>
+                <input type="radio" name="syear" id="syear4" value="4"/>
+                <label for="syear4">4번</label>
+            </fieldset>
+        </div>
+        <div data-role="footer" data-position="fixed" style="background-color: lightblue">
+            <h1>201858070 최민지</h1>
+        </div>
+    </div>
+
+    <div data-role="page" id="official_site">
+        <div data-role="header" data-position="fixed" style="background-color: lightblue">
+            <a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+            <h1>해리포터 관련사이트</h1>
+        </div>
+
+        <div data-role="content">
+            <a href="#dialog1" data-role="button" data-rel="dialog" src="https://www.warnerbros.com/movies/harry-potter-complete-8-film-collection/">해리포터 공식사이트</a>
+            <a href="#hstudio" data-role="button" src="https://www.wbstudiotour.co.uk/">해리포터 스튜디오</a>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>footer 영역</h4>
+        </div>
+    </div>
+
+    <div data-role="page" id="dialog1" data-position="fixed">
+        <div data-role="header">
+            <h1>해리포터 공식사이트</h1>
+        </div>
+        <div data-role="content">
+            <a href="#official_site" data-role="button" src="https://www.warnerbros.com/movies/harry-potter-complete-8-film-collection/">공식사이트로 이동</a>
+            <a href="#hstudio" data-role="button" src="https://www.wbstudiotour.co.uk/">해리포터 스튜디오 검색</a>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+﻿/* 스타일 초기화 */
+* { margin: 0 px; padding: 0px ; }
+header, body, footer { font-size: 14px; font-family: 나눔고딕,굴림,돋음,'Times New Roman',serif; width: 100%; }
+header, footer { text-align : center ; }
+body { margin: auto; }
+footer { position: fixed; bottom: 0px; }
+
+/* 공통 스타일 */
+h1 { padding: 15px; font-size: 30px ; color: black; }
+h2 { font-size: 15px; color: black; }
+h3 { margin: 10px; font-size: 15px; color: puple; text-shadow: 2px 2px 5px pink; }
+h1, h2 { background-image: url(벚꽃.jpg); background-repeat: repeat-x; }
+
+#logo { position: fixed; top:275px; left: 10px; opacity: 0.5; }
+
+img { border: 0; padding: 2px; }
+
+nav { margin: 10px 5px; float:left;}
+nav > span > a { font-style: bolder; margin: 3px ; padding: 3px; border: 1px solid pink; float: right; background: pink; color: white; }
+nav > span > a:hover { background: white; color: purple; }
+@media only screen and (min-width: 321px) and (orientation: landscape) {
+	section { width: 80%; float: right; }
+	aside { padding: 20px; width: 20%; text-align:left; }
+	footer { clear: both; }
+}
+.content  { clear: both; margin:30px; }
+.section1 ul li { list-style-position: inside; list-style-image: url("li.jpg"); }
+
+/* mintro.html 적용 스타일 */
+#me-pic { width: 6em; height: 7em; float: left; }
+
+/* minfo.html 적용 스타일 */
+#year-table { table-layout: auto; width: 80%; border-collapse: seperate; text-align: center;}
+#year-table thead { background: pink; } 
+
+/* mstudy.html 적용 스타일 */
+video {width:500px; height:400px; }
+
+/* mcareer.html 적용 스타일 */
+.semi-pic { width: 4em; height: 3em;  }
+#pic-container { overflow: hidden; }
+#pic-container:hover { height: 220px; }
+#pic1:hover { -webkit-transform: translate(150px,50px) scale(7,7); transform: scale(0.5); }
+#pic2:hover { -webkit-transform: translate(100px,50px) scale(7,7) ; transform: scale(0.5); }
+#pic3:hover { -webkit-transform: translate(30px,50px) scale(7,7); transform: scale(0.5); }
+
+/* mresume.html 적용 스타일*/
+table{ table-layout:auto; width:60%; border-collapse: seperate; text-align: center;}
+tr, td{ text-align:center; border: 1px solid; }
+td  {height:30px;}
+.ti { font-weight:bold; font-size:15px;}
+
