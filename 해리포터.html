@@ -13,8 +13,8 @@
         .picture { list-style:none; padding:0; margin:0; }
         .picture li { float:left; width:50%;}
         .picture li a {display:block; margin:5px; border: 1px }
-        .picture li img { display:block; width:50%;  height:auto;}
-        .picture li img:hover { display:block; width:100%;  height:auto;}
+        .picture li img { display:block; width:50%;  height:200%;}
+        .picture li img:hover { display:block; width:100%;  height:200%;}
     </style>
 </head>
 
@@ -35,6 +35,7 @@
                 <li type="button" data-icon="check"><a href="#series">시리즈 순서</a></li>
                 <li type="button" data-icon="camera"><a href="#gallery">Harry Potter 갤러리</a></li>
                 <li type="button" data-icon="video"><a href="#video">영화 홍보영상</a></li>
+                <li type="button" data-icon="song"><a href="#ost">영화 OST</a></li>
                 <li type="button" data-icon="home"><a href="#official_site">해리포터 관련사이트</a></li>
             </ul>
         </div>
@@ -113,29 +114,31 @@
         </div>
         <div data-role="content" >
             <div class="ui-bar ui-bar-e">해리포터와 죽음의 성물:1-예고편</div><br/>
-            <li><iframe width="100%" height="240" src="https://youtu.be/qTsaveYeR8I"></iframe></li><br/>
+            <li><iframe width="100%" height="240" src="http://www.youtube.com/embed/qTsaveYeR8I"></iframe></li><br/>
         </div>
         <div data-role="footer" style="background-color: lightblue">
             <h1>201858070 최민지</h1>
         </div>
     </div>
 
-    <div data-role="page" id="wizard3-1">
+
+    <div data-role="page" id="ost">
         <div data-role="header">
-            <h1>독도 노래1</h1>
+            <h1>해리포터 OST</h1>
         </div>
         <div data-role="content">
-            <div class="ui-bar ui-bar-e">홀로 아리랑</div><br/>
+            <div class="ui-bar ui-bar-e">Harry's wondrous world</div><br/>
             <audio controls width="100%" preload="metadata">
-                <source src="arirangalone.mp3" type="audio/mp3">
+                <source src="https://www.youtube.com/watch?v=iClEaJz_A0A" type="audio/mp3">
             </audio>
-            <img src="3-1.jpg" alt="" width="100%">
+            <img src="hp.jpg" alt="" width="100%">
         </div>
         <div data-role="footer">
-            <a href="#home"  data-direction="reverse">이전</a>
-            <a href="#wizard3-2" data-rel="dialog" data-transition="slide">다음</a>
+            <a href="#home"  data-direction="reverse" >이전</a>
+            <a href="#video" data-rel="dialog" data-transition="slide">홍보영상 보러가기</a>
         </div>
     </div>
+
 
     <div data-role="page" id="info">
         <div data-role="header" data-position="fixed"  style="background-color: lightblue">
@@ -143,8 +146,13 @@
             <h1>작가 소개</h1>
         </div>
         <div data-role="content">
-            <img width="100px" src="작가.jpeg" alt="" width="100px">
-            <p>조앤 롤링(Joan K. Rowling, 1965~)의 삶과 해리 포터의 성공은 그 자체로 하나의 동화이다. 조앤의 특출한 상상력은 독서를 즐겼던 양친이 틈만 나면 딸에게 책을 읽어주곤 했던 조앤의 어린 시절부터 형성되었다. 이야기의 세계에 빠져 상상력을 지펴가던 그녀는 여섯 살 때 '토끼' 이야기를 지어내 두 살 아래의 여동생에게 들려주었다. 그것은 주인공 토끼가 홍역에 걸려 집에 누워 있는데, 동물 친구들이 병문안을 온다는 내용의 이야기였다. 조앤은 동생에게 들려준 그 이야기를 곧 연필로 적어나가기 시작했다. 이것이 그녀의 생애 첫 작품이었다. 그리고 열 살 무렵엔 두 번째 작품인 「일곱 개의 저주받은 다이아몬드」라는 단편소설을 쓰기도 했다.</p>
+            <img width="150px" src="작가.jpeg">
+           조앤 롤링(Joan K. Rowling, 1965~)의 삶과 해리 포터의 성공은 그 자체로 하나의 동화이다.
+            조앤의 특출한 상상력은 독서를 즐겼던 양친이 틈만 나면 딸에게 책을 읽어주곤 했던 조앤의 어린 시절부터 형성되었다.
+            이야기의 세계에 빠져 상상력을 지펴가던 그녀는 여섯 살 때 '토끼' 이야기를 지어내 두 살 아래의 여동생에게 들려주었다.
+            그것은 주인공 토끼가 홍역에 걸려 집에 누워 있는데, 동물 친구들이 병문안을 온다는 내용의 이야기였다.
+            조앤은 동생에게 들려준 그 이야기를 곧 연필로 적어나가기 시작했다. 이것이 그녀의 생애 첫 작품이었다.
+               그리고 열 살 무렵엔 두 번째 작품인 「일곱 개의 저주받은 다이아몬드」라는 단편소설을 쓰기도 했다.
         </div>
         <fieldset data-role="controlgroup" data-type="horizontal" >
             <legend>정보가 도움이 되었습니까?</legend>
@@ -166,10 +174,12 @@
         </div>
         <div data-role="content">
             <ul class="picture">
-                <li><a href="hp_1.jpeg" rel="external"><img src="hp_1.jpeg"/></a></li>
-                <li><a href="hp_2.jpeg" rel="external"><img src="hp_2.jpeg" /></a></li>
-                <li><a href="hp_3.jpeg" rel="external"><img src="hp_3.jpeg" /></a></li>
-                <li><a href="hp_4.jpeg" rel="external"><img src="hp_4.jpeg" /></a></li>
+                <li><a href="h1.jpg" rel="external"><img src="h1.jpg"/></a></li>
+                <li><a href="h2.jpg" rel="external"><img src="h2.jpg" /></a></li>
+                <li><a href="h3.jpg" rel="external"><img src="h3.jpg" /></a></li>
+                <li><a href="h4.jpg" rel="external"><img src="h4.jpg" /></a></li>
+                <li><a href="h5.jpg" rel="external"><img src="h5.jpg" /></a></li>
+                <li><a href="h6.jpg" rel="external"><img src="h6.jpg" /></a></li>
             </ul>
         </div>
         <div>
@@ -190,29 +200,34 @@
         </div>
     </div>
 
-    <div data-role="page" id="official_site">
-        <div data-role="header" data-position="fixed" style="background-color: lightblue">
-            <a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+    <div data-role="page" id="official_site" data-position="fixed">
+        <div data-role="header">
             <h1>해리포터 관련사이트</h1>
         </div>
-
         <div data-role="content">
-            <a href="#dialog1" data-role="button" data-rel="dialog" src="https://www.warnerbros.com/movies/harry-potter-complete-8-film-collection/">해리포터 공식사이트</a>
-            <a href="#hstudio" data-role="button" src="https://www.wbstudiotour.co.uk/">해리포터 스튜디오</a>
+            <a href="#dialog1" data-role="button" data-rel="dialog">공식사이트</a>
+            <a href="#dialog2" data-role="button">해리포터 studio</a>
         </div>
-
         <div data-role="footer" data-position="fixed">
             <h4>footer 영역</h4>
         </div>
     </div>
-
     <div data-role="page" id="dialog1" data-position="fixed">
         <div data-role="header">
-            <h1>해리포터 공식사이트</h1>
+            <h1>공식사이트</h1>
         </div>
         <div data-role="content">
-            <a href="#official_site" data-role="button" src="https://www.warnerbros.com/movies/harry-potter-complete-8-film-collection/">공식사이트로 이동</a>
-            <a href="#hstudio" data-role="button" src="https://www.wbstudiotour.co.uk/">해리포터 스튜디오 검색</a>
+            <a href="https://www.warnerbros.com/movies/harry-potter-complete-8-film-collection" data-role="button">공식사이트로 이동하기</a>
+            <a href="#dialog2" data-role="button">해리포터 studio</a>
+        </div>
+    </div>
+    <div data-role="dialog" id="dialog2" data-position="fixed">
+        <div data-role="header">
+            <h1>해리포터 studio</h1>
+        </div>
+        <div data-role="content">
+            <a href="https://www.wbstudiotour.co.uk" data-role="button">해리포터 studio로 이동하기</a>
+            <a href="#dialog1" data-role="button">공식사이트</a>
         </div>
     </div>
 
