@@ -8,6 +8,22 @@
     <link rel="stylesheet" href="mportpolio.css"/>
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script>
+        $(document).ready( function() {
+            //	fadeOut/fadeIn/fadeToggle 효과
+            $('#fadeOut').click(function() {
+                $('#img1').fadeOut(2000);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready( function() {
+            $('#toggle').click(function() {
+                $('input[name="text1"]').toggle(2000);
+            });
+        });
+    </script>
+
     <style>
         li { list-style:none; }
         .picture { list-style:none; padding:0; margin:0; }
@@ -28,7 +44,8 @@
         </div>
 
         <div data-role="content" style="text-align:center">
-            <img src="hp.jpg" >
+            <img id="img1"src="hp.jpg" >
+            <button id="fadeOut" data-icon="eye" data-iconpos="notext"> </button>
             <ul data-role="listview" data-inset="true" data-divider-theme="e">
                 <li data-role="listdivider">Harry Potter 소개</li>
                 <li type="button" data-icon="info"><a href="#info">작가 소개</a></li>
@@ -112,7 +129,7 @@
             <a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
             <h1>영화 홍보영상</h1>
         </div>
-        <div data-role="content" >
+        <div data-role="content" data-rel="dialog" data-transition="slide">
             <div class="ui-bar ui-bar-e">해리포터와 죽음의 성물:1-예고편</div><br/>
             <li><iframe width="100%" height="240" src="http://www.youtube.com/embed/qTsaveYeR8I"></iframe></li><br/>
         </div>
@@ -123,19 +140,22 @@
 
 
     <div data-role="page" id="ost">
-        <div data-role="header">
+        <div data-role="header" data-position="fixed" style="background-color: lightblue">
+
+            <a href="#home"  data-direction="reverse" >이전</a>
             <h1>해리포터 OST</h1>
+            <a href="#video" data-rel="dialog" data-transition="slide">홍보영상 보러가기</a>
         </div>
         <div data-role="content">
-            <div class="ui-bar ui-bar-e">Harry's wondrous world</div><br/>
+            <button id="toggle" data-inline="true"> 노래 제목 </button>
+            <div><input type="text" name="text1" value="Harry's wondrous world"/></div>
             <audio controls width="100%" preload="metadata">
                 <source src="https://www.youtube.com/watch?v=iClEaJz_A0A" type="audio/mp3">
             </audio>
             <img src="hp.jpg" alt="" width="100%">
         </div>
-        <div data-role="footer">
-            <a href="#home"  data-direction="reverse" >이전</a>
-            <a href="#video" data-rel="dialog" data-transition="slide">홍보영상 보러가기</a>
+        <div data-role="footer" data-position="fixed" style="background-color: lightblue">
+            <h1>201858070 최민지</h1>
         </div>
     </div>
 
@@ -202,6 +222,7 @@
 
     <div data-role="page" id="official_site" >
         <div data-role="header" data-position="fixed" style="background-color: lightblue">
+            <a href="#home"  data-direction="reverse" >이전</a>
             <h1>해리포터 관련사이트</h1>
         </div>
         <div data-role="content">
